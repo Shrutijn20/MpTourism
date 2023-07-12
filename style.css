@@ -1,0 +1,433 @@
+/* Navbar */
+.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.75%;
+  overflow: hidden;
+  background-color: black;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+li {
+  margin-top: 1.75%;
+  margin-right: 2.5%;
+  float: right;
+  border-right: 1px solid red;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  height: 215px;
+  width: 205px;
+}
+
+/* Guidlines */
+.guide:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.guide {
+  color: white;
+  text-align: right;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.covid {
+  position: absolute;
+  top: 3.5%;
+  right: 2.75%;
+  float: right;
+  width: 20%;
+  animation-duration: 1.75s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    right: -18%;
+    width: 45%;
+  }
+
+  to {
+    right: 8%;
+    width: 50%;
+  }
+}
+
+
+/* video */
+#myVideo {
+  /* position: relative; */
+  right: 0;
+  bottom: 0;
+  height: 490px;
+  width: 100%;
+  padding-bottom: 20.5%;
+  /* min-height: 75%; */
+}
+
+.container {
+  width: 100%;
+  background-color: black;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0%;
+  height: 800px ;
+}
+
+/* Top Destinations */
+.topDes {
+  position: absolute;
+  left: 40%;
+  margin-bottom: 4.75%;
+  margin-top: 3.5%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.75rem;
+  color: #FF2442;
+}
+
+.destinations {
+  display: flex;
+  margin-top: 6.5%;
+  position: relative;
+  background-color: #DFD3C3;
+  height: 500px;
+  width: 100%;
+}
+
+.places {
+  position: relative;
+  flex: 1;
+}
+.places:hover .placeImg{
+  opacity: 0.05;
+}
+.places:hover .middle{
+  opacity: 1;
+}
+
+.placeImg {
+  margin-top: 45.5%;
+  margin-left: 20px;
+  height: 245px;
+  width: 350px;
+  opacity: 1;
+  display: block;
+  transition: 1.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  left: 15px;
+  bottom: 330px;
+  color: #CE1212;
+  font-size: 26px;
+  padding: 16px 32px;
+  text-decoration: underline;
+}
+.belowTopDes{
+  text-align: center;
+  margin-top: 3.75%;
+  margin-left: 40%;
+  height: 45px;
+  width: 300px;
+  font-size: 1rem;
+  background-color: #DFD3C3;
+  border: none;
+}
+.belowTopDes:hover{
+  color: #DA0037;
+}
+
+/* Things to do */
+.thingsToDo{
+  height: 500px;
+  width: 100%;
+  background-image: url("sunset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  margin-top: 6.5%;
+  position: relative;
+}
+
+.ttd{
+  position: absolute;
+  left: 40%;
+  margin-bottom: 4.75%;
+  margin-top: 3.5%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.75rem;
+  color: whitesmoke;  
+}
+.things{
+  position: relative;
+  flex: 1;
+}
+.things:hover .thingsImg{
+  opacity: 0.25;
+}
+.things:hover .middle{
+  opacity: 1;
+}
+.thingsImg{
+  margin-top: 43%;
+  margin-left: 20px;
+  height: 245px;
+  width: 350px;
+  opacity: 1;
+  display: block;
+  transition: 1.5s ease;
+  backface-visibility: hidden;
+}
+.text2{
+  position: absolute;
+  left: 10px;
+  bottom: 330px;
+  color: whitesmoke;
+  font-size: 26px;
+  padding: 16px 32px;
+  text-decoration: underline;
+}
+/* Youtube Videos  */
+.ytVideo{
+  margin-top: 51%;
+  margin-left: 20px;
+  height: 245px;
+  width: 350px;
+}
+
+
+/* Footer Section */
+.main {
+  max-height: 550px;;
+  background-color: #292c2f;
+  color: white;
+  font-size: 38pt;
+  text-align: center;
+  line-height: 550px;
+ }
+ footer{
+  bottom: 0;
+ }
+ .footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  
+  padding: 55px 50px;
+  margin-top: 80px;
+ }
+  
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+ }
+  
+ .footer-distributed .footer-left{
+  width: 40%;
+ }
+  
+ .footer-distributed h3{
+  color:  red;
+  font: normal 36px 'Amatic SC', cursive ;
+  margin: 0;
+ }
+  
+
+  
+ .footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+ }
+  
+ .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+ }
+  
+ .footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+  
+ .footer-distributed .footer-center{
+  width: 35%;
+ }
+  
+ .footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+ }
+  
+ .footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+ }
+  
+ .footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+ }
+  
+ .footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+ }
+  
+ .footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+ }
+  
+ .footer-distributed .footer-right{
+  width: 20%;
+ }
+  
+ .footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+ .footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+  
+ .footer-distributed .footer-icons{
+  margin-top: 25px;
+ }
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  
+  margin-right: 3px;
+  margin-bottom: 5px;
+ }
+  
+  
+ @media (max-width: 880px) {
+  
+  .footer-distributed{
+  font: bold 14px sans-serif;
+  
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  }
+  
+  .footer-distributed .footer-center i{
+  margin-left: 0;
+  }
+  .main {
+  line-height: normal;
+  font-size: auto;
+  }
+  
+ }
+
+
+/* Covid Guideline's page */
+.virus {
+  width: 100%;
+  margin: 2% 0% 0% 0%;
+}
+
+.cogu {
+  float: left;
+  margin-left: 8.5%;
+  height: 525px;
+  width: 635px;
+  margin-top: 2%;
+}
+
+.child {
+  float: right;
+  margin-right: 15.5%;
+  margin-top: 2%;
+}
